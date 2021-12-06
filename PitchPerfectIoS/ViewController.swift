@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var count=0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,5 +17,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func recordAudio(_ sender: Any) {
+        count+=1
+        print("Record button pressed \(count)")
+    }
 }
 
